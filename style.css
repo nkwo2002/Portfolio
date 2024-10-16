@@ -131,7 +131,7 @@ nav{
     display: inline-block;
     background: linear-gradient(45deg, #040613, #2b3486);
     text-decoration: none !important;
-    border-radius: 10rem;
+    
 }
 .nav-links{
     display: flex;
