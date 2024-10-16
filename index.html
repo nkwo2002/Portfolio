@@ -213,6 +213,24 @@ designing.
              </div>
         </div>
     </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="img/image1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="img/image2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="img/image3.jpg" style="width:100%">
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
  </section>
 
  <!-- ................contact section.................... -->
@@ -236,6 +254,7 @@ designing.
             <a href="https://wa.link/rrg116"><h5>Whatsapp</h5> </a>
         </div>
     </div>
+    
 </section>
 
  <!-- ................footer section.................... -->
@@ -248,5 +267,65 @@ designing.
    </ul> 
    <p>&copy; Copyright You Nkwo Brainie || All Rights Reserved.</p>
 </footer>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Get to me if interested in any Web Design. <br> <br> <br> Click the close button to dismiss.</p>
+    </div>
+</div>
+<button id="openModalBtn">Open Modal</button>
+
+ 
+  
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button or element to open the modal
+    var btn = document.getElementById("openModalBtn"); // Make sure to have an element with this ID to trigger the modal
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // Open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // Close the modal when user clicks on <span> (x)
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // Close the modal if the user clicks anywhere outside of the modal
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          slides[slideIndex-1].style.display = "block";  
+        }
+        </script>
+        
 </body>
 </html>

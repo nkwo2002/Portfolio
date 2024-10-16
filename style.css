@@ -302,3 +302,189 @@ footer .nav-links{
     margin-bottom: 3rem;
 }
 
+/*--.............Start media screen............--*/
+/* Max-Width(1024px) */
+@media (max-width:1024px) {
+    /*Start About */
+    .about-container{
+        gap: 30px;
+    }
+    .basic-edu{
+        gap: 20px;
+    }
+    .experience-container{
+        gap: 30px;
+    }
+    .project-container{
+       grid-template-columns: repeat(2,1fr); 
+    }
+}
+/* Max-Width(991px) */
+@media (max-width:991px) {
+    .logo{
+        display: none;
+    }
+    .nav-links{
+        justify-content: center;
+        width: 100%;
+    }
+    .experience-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Max-Width(768px) */
+@media (max-width:768px) {
+    h1{
+        font-size: 38px;
+    }
+    h2{
+        font-size: 26px;
+    }
+    a{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    
+    .header-container{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    .header-left{
+        width: 70%;
+        margin:0 auto;
+    }
+    .about-container{
+        grid-template-columns: 1fr;
+    }
+    .about-left{
+       width: 70%;
+       margin:0 auto;
+    }
+    .basic-edu{
+        gap: 10px;
+    }
+    .experience-box{
+       padding: 10px;
+    }
+    .experience{
+        gap: 20px;
+    }
+    .ex-div{
+        gap: 10px;
+    }
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+}
+ /* Max-Width(600px) */
+ @media (max-width:600px){
+    a{
+        font-size: 18px;
+    }
+    .nav-links{
+        gap: 0;
+        justify-content: space-between;
+    }
+    .contact-container{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    footer{
+        padding: 0;
+        padding-bottom: 20px;
+        width: 90%;
+        margin: auto;
+        margin-top: 9rem;
+    }
+    footer .nav-links{
+        width: 100%;
+        justify-content: space-between;
+    }
+ }
+/*--.............end media screen............--*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+  .slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  button:hover {
+    background-color: #4CAF50;
+    color: white;
+    transition: 0.3s;
+  }
+  
